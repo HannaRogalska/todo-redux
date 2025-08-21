@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState, AppDispatch } from "../store/store";
 import { toggleTodo } from "../features/todo/todoSlice";
-import { useEffect } from "react";
+
 
 const TodoItem = () => {
-  const todos = useSelector((state: RootState) => state.todo.todos);
+  const todos = useSelector((state: RootState) => state.todo?.todos ?? []);
   console.log(todos);
   const dispatch: AppDispatch = useDispatch();
   return (
