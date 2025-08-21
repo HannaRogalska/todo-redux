@@ -1,7 +1,3 @@
-
-
-
-
 import TodoInput from "./components/TodoInput";
 import TodoItem from "./components/TodoItem";
 
